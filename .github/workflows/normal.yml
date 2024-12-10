@@ -3,15 +3,15 @@ name: normal
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-image:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Build x86 image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@main
         with:
           name: ehco1996/v2scar
           username: ${{ secrets.DOCKER_USERNAME }}
