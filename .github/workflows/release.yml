@@ -2,11 +2,11 @@ name: go-releaser
 
 on:
   create:
-    branches: master
+    branches: main
 
 jobs:
   ci-ci-ci:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
     - name: Set up Go 1.15
       uses: actions/setup-go@v1
